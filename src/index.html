@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球时钟 | Global Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>全球时钟 <span>Global Clock</span></h1>
+            <div class="controls">
+                <button id="customize-btn" class="btn"><i class="fas fa-cog"></i> 自定义城市</button>
+                <button id="fullscreen-btn" class="btn"><i class="fas fa-expand"></i></button>
+            </div>
+        </header>
+        
+        <main class="clock-grid">
+            <!-- 时钟将通过JavaScript动态生成 -->
+        </main>
+        
+        <div id="customize-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>自定义城市</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>选择您想要显示的城市（最多9个）</p>
+                    <div class="city-selector">
+                        <!-- 城市选择器将通过JavaScript动态生成 -->
+                    </div>
+                    <div class="modal-actions">
+                        <button id="reset-cities" class="btn btn-secondary">重置为默认</button>
+                        <button id="save-cities" class="btn btn-primary">保存设置</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="cities.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
