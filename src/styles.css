@@ -113,6 +113,8 @@ h1 span {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 380px; /* 固定高度确保所有卡片一致 */
+  justify-content: space-between; /* 均匀分布内容 */
 }
 
 .clock-card:hover {
@@ -376,6 +378,10 @@ h1 span {
   .digital-time {
     font-size: 1.3rem;
   }
+  
+  .clock-card {
+    height: 350px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -389,6 +395,10 @@ h1 span {
   
   .city-selector {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .clock-card {
+    height: 360px;
   }
 }
 
@@ -414,5 +424,9 @@ h1 span {
   
   .city-selector {
     grid-template-columns: 1fr;
+  }
+  
+  .clock-card {
+    height: 400px;
   }
 }
