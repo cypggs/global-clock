@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < 12; i++) {
       const hourMark = document.createElement('span');
       const angle = i * 30;
-      hourMark.style.transform = `rotate(${angle}deg) translateY(-65px)`;
+      hourMark.style.transform = `rotate(${angle}deg) translateY(-90px)`;
       hourMarks.appendChild(hourMark);
     }
     
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (i % 5 !== 0) { // 跳过小时刻度位置
         const minuteMark = document.createElement('span');
         const angle = i * 6;
-        minuteMark.style.transform = `rotate(${angle}deg) translateY(-65px)`;
+        minuteMark.style.transform = `rotate(${angle}deg) translateY(-90px)`;
         minuteMarks.appendChild(minuteMark);
       }
     }
